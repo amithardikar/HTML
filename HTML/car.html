@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form >
+  <select name="cars" id="c" onchange="premium()">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+ 
+  <p id="1"></p>
+</form>
+<script>
+function premium(){
+var x=document.getElementById("c").value;
+document.getElementById("1").innerHTML=x;
+
+}
+</script>
+
+</body>
+</html>

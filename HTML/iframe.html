@@ -1,0 +1,18 @@
+
+<html>
+<body>
+<script>
+window.onload=function(){
+
+var name=document.getElementById("1");
+var param=new URLSearchParams(window.location.search);
+
+if(param.has("firstname")){
+			document.getElementById("1").innerHTML =param.get("firstname")+name.innerHTML;
+		}
+}
+
+</script>
+<h1 id="1">You are in an iframe<h2>
+</body>
+</html>
