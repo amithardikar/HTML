@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Two Column Grid Layouts for Tablets and Desktops</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    /* Some custom styles to beautify this example */
+    .demo-content{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+        background: #dbdfe5;
+        margin-bottom: 10px;
+    }
+    .demo-content.bg-alt{
+        background: yellow;
+    }
+    .topbuffer{ margin-top: 20px;
+
+    }
+</style>
+</head>
+<body>
+
+
+        <nav class="navbar navbar-inverse ">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>                        
+						</button>
+
+                    <a class="navbar-brand" href="https://www.facebook.com/">Facebook</a>
+				  </div>
+				  <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					
+
+					
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Notification</a></li>
+                  </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    <label for="email" style="color:white" autofocus>Email or Phone </label>
+                    <input type="text" class="text" id="t1" autofocus>
+                    <label for="pass" style="color:white">password </label>
+                    <input type="password" id="t2" class="password" >
+                    <button class="btn btn-info" onclick="hello();" value="log in"><span class="glyphicon glyphicon-log-in"> Log-in</span></button>>
+                    <input type="reset" value="reset" class="btn btn-info" onclick="reset();">
+					  </ul>
+				  </div>
+                </div>
+              </nav>
+
+
+    <!-- Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works. -->
+    <div class="container">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-sm-6 demo-content">
+                
+                <img src="C:/Users/Amit%20H/Desktop/fb.png " class="img-responsive" width="537" height="195" title="fb">
+
+            </div>
+            <div class="col-sm-6">
+                <!--div class="demo-content bg-alt">.col-sm-6</div-->
+                <div class="form-group clearfix" >
+       
+                        <label class="col-sm-2 " for="Name">Name:</label>
+                        <input type="text" class="col-sm-9 "  id="name" placeholder="Enter Name" name="name" >
+                </div>
+                <div class="form-group clearfix">
+                        <label class="col-sm-2" for="pwd">Number:</label>
+                               
+                          <input type="text" class="col-sm-9" id="pwd" placeholder="Enter Number" name="pwd" >
+                </div>
+
+                <div class="form-group clearfix">
+                        <label class="col-sm-2">
+                             Gender:
+                        </label>
+                        
+                          <label class="radio-inline ">
+                             <input type="radio" name="optradio">Male
+                          </label>
+                          <label class="radio-inline">
+                             <input type="radio" name="optradio">Female 
+                          </label>
+                          <label class="radio-inline">
+                             <input type="radio" name="optradio">other 
+                          </label>
+                </div>
+
+                <div class="form-group clearfix">
+		 
+                        <label  class="col-md-2" for="Name">Birthday:</label>
+                
+                    
+                
+                <select title="day">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="1">5</option>
+                     <option value="1">6</option>
+                     <option value="1">7</option>
+                     <option value="1">8</option>
+                     <option value="1">9</option>
+                     <option value="1">10</option>
+                     <option value="1">11</option>
+                     <option value="1">12</option>
+                     <option value="1">13</option>
+                     <option value="1">14</option>
+                     <option value="1">15</option>
+                     <option value="1">16</option>
+                     <option value="1">17</option>
+                     <option value="1">18</option>
+                     <option value="1">19</option>
+                     <option value="1">20</option>
+                     <option value="1">21</option>
+                     <option value="1">22</option>
+                     <option value="1">23</option>
+                     <option value="1">24</option>
+                     <option value="1">25</option>
+                     <option value="1">26</option>
+                     <option value="1">27</option>
+                     <option value="1">28</option>
+                     <option value="1">29</option>
+                     <option value="1">30</option>
+                     <option value="1">31</option>
+                    
+				</select>
+				<select title="month">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="1">5</option>
+						<option value="1">6</option>
+						<option value="1">7</option>
+						<option value="1">8</option>
+						<option value="1">9</option>
+						<option value="1">10</option>
+						<option value="1">11</option>
+						<option value="1">12</option>
+				</select>
+
+				
+                <select title="Year">
+						<option value="1">1991</option>
+						<option value="2">1992</option>
+						<option value="3">1993</option>
+						<option value="4">1994</option>
+						<option value="1">1995</option>
+						<option value="1">1996</option>
+						<option value="1">1997</option>
+						<option value="1">1998</option>
+						<option value="1">1999</option>
+						<option value="1">2000</option>
+						<option value="1">2001</option>
+						<option value="1">2002</option>
+						<option value="1">2003</option>
+						<option value="1">2004</option>
+						<option value="1">15</option>
+						<option value="1">16</option>
+						<option value="1">17</option>
+						<option value="1">18</option>
+						<option value="1">19</option>
+						<option value="1">20</option>
+						<option value="1">21</option>
+						<option value="1">22</option>
+						<option value="1">23</option>
+						<option value="1">24</option>
+						<option value="1">25</option>
+						<option value="1">26</option>
+						<option value="1">27</option>
+						<option value="1">28</option>
+						<option value="1">29</option>
+						<option value="1">30</option>
+						<option value="1">2018</option>
+					   
+				 
+						   <option value="1">1</option>
+						   <option value="2">2</option>
+						   <option value="3">3</option>
+						   <option value="4">4</option>
+						   <option value="1">5</option>
+						   <option value="1">6</option>
+						   <option value="1">7</option>
+						   <option value="1">8</option>
+						   <option value="1">9</option>
+						   <option value="1">10</option>
+						   <option value="1">11</option>
+						   <option value="1">12</option>
+				</select>
+                     
+			</div>
+			
+			<div class="form-group clearfix" style="text-align:center">        
+					
+				<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-log-in"></span> Sign-up</button>
+					   
+			</div>
+                     
+                            
+
+
+
+            </div>
+        </div>
+        <hr>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:400px;margin:10 auto">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                       <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="C:/Users/Amit%20H/Desktop/lion-wild-africa-african.jpg" alt="lion-wild-africa-african" style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="C:/Users/Amit%20H/Desktop/download.jpg" alt="Chicago" style="width:100%;">
+                      <div class="carousel-caption">
+                      <h2>Home</h2>
+                      </div>
+                      </div>
+                    
+                      <div class="item">
+                        <img src="C:/Users/Amit%20H/Desktop/Ferrari-Wallpaper-17.jpg" alt="Ferrari" style="width:100%;">
+                      </div>
+                      
+                      <div class="item">
+                        <img src="C:/Users/Amit%20H/Desktop/KTM-Duke-390-HD-Wallpapers-3.jpg " alt="KTM-Duke-390-" style="width:100%;">
+                      </div>
+                    
+                      
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-sm-6">
+               <div class="demo-content bg-alt"></div>
+                
+            </div>
+        </div>
+        <hr>
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="demo-content">.col-sm-3</div>
+            </div>
+            <div class="col-sm-12">
+                <div class="demo-content bg-alt">.col-sm-9</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+		function hello()
+		{
+		var name="amit";
+		var pass="1234";
+		
+		var a=document.getElementById("t1").value;
+		
+		var b=document.getElementById("t2").value;
+			if(name==a&&pass==b)
+			{
+				alert("logged in succsessful welcome  "+a);
+			}
+		else
+		{
+			alert("please checked ur credensials");
+			reset();
+			
+		}
+		
+		}
+		function reset()
+		{
+		
+		document.getElementById("t1").value="";
+		document.getElementById("t2").value="";
+		}
+	</script>
+</html>                            
