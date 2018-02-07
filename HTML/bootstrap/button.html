@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="jumbotron">Button Group</h2>
+  <p>The .btn-group class creates a button group:</p>
+  <div class="btn-group btn-group-lg">
+    <button type="button" class="btn btn-primary ">Home</button>
+    <button type="button" class="btn btn-primary">Messages</button>
+    <button type="button" class="btn btn-primary">Notifications</button>
+	
+	<!--nested buttons-->
+	 <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Settings<span class="caret"></span></button>
+	   <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">General</a></li>
+      </ul>
+	  
+	  </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <h2>Vertical Button Group</h2>
+  <pre >Use the .btn-group-vertical class to create a vertical button group:</pre>
+  <div class="btn-group-vertical btn-group-lg">
+    <button type="button" class="btn btn-primary">Profile</button>
+    <button type="button" class="btn btn-primary">Events</button>
+    <button type="button" class="btn btn-primary">Games</button>
+	<a class="btn" href="#"><i class="icon-hand-up"></i></a>
+  </div>
+</div>
+ <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>   
+</div>
+
+</body>
+</html>

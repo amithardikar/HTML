@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navbar example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-info">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.facebook.com/">Facebook</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Message</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Notification</a></li>
+      </ul>
+	  
+      <ul class="nav navbar-nav navbar-right">
+    <label for="email" style="color:white" autofocus>Email or Phone </label>
+       <input type="text" class="text" id="t1" autofocus>
+			
+		
+		
+        <label for="pass" style="color:white">password </label>
+        <input type="password" id="t2" class="password" >
+		<input type="button" class="btn btn-info" onclick="hello()" value="log in">
+		<input type="reset" value="reset" class="btn btn-info" onclick="reset()" >
+		 </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Basic Navbar Example</h3>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+
+
+<div class="row">
+
+<div class="col-sm-6">
+<img src="C:/Users/Amit%20H/Desktop/fb.png " class="image" width="537" height="195" title="fb">
+
+<!-- Carousel start-->
+
+   
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:400px;margin:10 auto">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="C:/Users/Amit%20H/Desktop/lion-wild-africa-african.jpg" alt="lion-wild-africa-african" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="C:/Users/Amit%20H/Desktop/download.jpg" alt="Chicago" style="width:100%;">
+      <div class="carousel-caption">
+	  <h2>Home</h2>
+	  </div>
+	  </div>
+    
+      <div class="item">
+        <img src="C:/Users/Amit%20H/Desktop/Ferrari-Wallpaper-17.jpg" alt="Ferrari" style="width:100%;">
+      </div>
+      
+      <div class="item">
+        <img src="C:/Users/Amit%20H/Desktop/KTM-Duke-390-HD-Wallpapers-3.jpg " alt="KTM-Duke-390-" style="width:100%;">
+      </div>
+    
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+
+<!-- Carousel end -->
+</div>
+
+<div class="col-sm-6">
+ 
+  <form >
+    <div class="form-group clearfix" >
+
+      <label class="control-label col-sm-2 " for="Name">Name:</label>
+      <div class="col-sm-10 ">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" >
+      </div>
+	  
+    </div>
+    <div class="form-group clearfix">
+     
+	  <label class="control-label  col-sm-2" for="pwd">Number:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Number" name="pwd" >
+      </div>
+
+	</div>
+	<div class="form-group clearfix">
+	<label class="col-sm-3">
+     Gender
+    </label>
+	
+    <label class="radio-inline ">
+      <input type="radio" name="optradio">Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Female 
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">other 
+    </label>
+	</div>
+	
+   
+		 <div class="row">
+		 <div class="col-sm-2">
+		 <div class="form-group clearfix">
+		 
+		 <label class="control-label col-sm-2" for="Name">Birthday:</label>
+      </div>
+	  </div>
+	  <div class="col-sm-4">
+	 <select title="day">
+	  <option value="1">1</option>
+	  <option value="1">2</option>
+	  <option value="1">3</option>
+	  <option value="1">4</option>
+	  <option value="1">5</option>
+	  <option value="1">6</option>
+	 <option value="1">7</option>
+	 <option value="1">8</option>
+	 <option value="1">9</option>
+	 <option value="1">10</option>
+	  <option value="1">11</option>
+	  <option value="1">12</option>
+	  <option value="1">13</option>
+	  <option value="1">14</option>
+	  <option value="1">15</option>
+	  <option value="1">16</option>
+	 <option value="1">17</option>
+	 <option value="1">18</option>
+	 <option value="1">19</option>
+	 <option value="1">20</option>
+	  <option value="1">21</option>
+	  <option value="1">22</option>
+	  <option value="1">23</option>
+	  <option value="1">24</option>
+	  <option value="1">25</option>
+	  <option value="1">26</option>
+	 <option value="1">27</option>
+	 <option value="1">28</option>
+	 <option value="1">29</option>
+	 <option value="1">30</option>
+	  <option value="1">31</option>
+	 
+	  </select>
+	  
+	  
+	  
+	  </div>
+	  
+	   <div class="form-group clearfix">        
+      <div class="col-md-8">
+        <button type="submit" class="btn btn-info">Sign-up</button>
+		 </div>
+	</div>
+	  </div>
+     
+      
+		 
+		 
+		 
+		 </div>
+  
+  </form>
+ 
+ </div><!-- row container-->
+
+</div><!-- main container-->
+
+
+
+
+
+ 
+
+
+
+</body>
+<script>
+function hello()
+{
+var name="amit";
+var pass="1234";
+
+var a=document.getElementById("t1").value;
+
+var b=document.getElementById("t2").value;
+	if(name==a&&pass==b)
+	{
+		alert("logged in succsessful welcome  "+a);
+	}
+else
+{
+	alert("please checked ur credensials");
+	reset();
+	
+}
+
+}
+function reset()
+{
+
+document.getElementById("t1").value="";
+document.getElementById("t2").value="";
+}
+</script>
+</html>
